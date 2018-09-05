@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SHS_Student_Reg">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Academic Program"/>
+    <Spinner
+        android:id="@+id/spinner_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_view"/>
+    <TextView
+        android:id="@+id/text_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view"
+        android:text="Last Name"/>
+    <EditText
+        android:id="@+id/edit_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view"/>
+    <TextView
+        android:id="@+id/text_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text1"
+        android:text="First Name" />
+    <EditText
+        android:id="@+id/edit_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view2"/>
+    <TextView
+        android:id="@+id/text_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text2"
+        android:text="Middle Name" />
+    <EditText
+        android:id="@+id/edit_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view3"/>
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_below="@id/edit_text3"/>
+    <RadioGroup
+    android:id="@+id/radio"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"/>
+    <RadioButton
+        android:id="@+id/R_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_below="@id/gender"/>
+    <RadioButton
+        android:id="@+id/R_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:layout_toRightOf="@id/R_male"
+        android:layout_below="@id/gender"/>
+    <TextView
+        android:id="@+id/Req"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requirements"
+        android:layout_below="@id/R_female"/>
+    <CheckBox
+        android:id="@+id/form_138"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Original Report Card (Form 138)"
+        android:layout_below="@+id/Req"/>
+    <CheckBox
+        android:id="@+id/NSO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Original NSO copy of Birth Certificate"
+        android:layout_below="@+id/form_138"/>
+    <CheckBox
+        android:id="@+id/Cert_good_moral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Certificate of good moral character"
+        android:layout_below="@+id/NSO"/>
+    <CheckBox
+        android:id="@+id/Cert_JHS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Certification of Junior High School Completion"
+        android:layout_below="@+id/Cert_good_moral"/>
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Cert_JHS"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"/>
+</RelativeLayout>

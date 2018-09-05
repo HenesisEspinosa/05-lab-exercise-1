@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SH Student Registration</string>
+    <string name="text_view1">Last Name</string>
+    <string name="text_view2">First Name</string>
+    <string name="text_view3">Middle Name</string>
+    <string name="spinner">ABM</string>
+</resources>
